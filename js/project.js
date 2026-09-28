@@ -51,7 +51,7 @@ const projects = {
             <p>
                 The project was developed in Godot using GDScript. I created the
                 game's scripts, environment and other assets myself, with the
-                exception of the customer asset provided by VROJD Studio.
+                exception of the customer asset provided by VROID Studio.
             </p>
 
             <p>
@@ -356,7 +356,7 @@ const projects = {
         title: "Web<br><span>Development.</span>",
 
         intro:
-            "A full-stack animal dossier application built with Express, TypeScript and EJS, including authentication, sessions and database functionality.",
+            "A full-stack animal medical records application built with Express, TypeScript and EJS, including authentication, sessions and database functionality.",
 
         technologies: [
             "TypeScript",
@@ -377,15 +377,14 @@ const projects = {
 
         overview: `
             <p>
-                This project is a full-stack web application built around animal
-                dossiers. For the assignment, we could choose the subject of the
+                This project is a full-stack web application built around animal medical records. For the assignment, we could choose the subject of the
                 application, and I chose to create a collection of animal information.
             </p>
 
             <p>
                 The application retrieves its initial data from a JSON file hosted
                 in a separate GitHub repository. Users can browse the available
-                animals and open an individual page containing that animal's dossier.
+                animals and open an individual page containing that animal's medical record.
             </p>
 
             <p>
