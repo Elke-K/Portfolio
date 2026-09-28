@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Mini Projects</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="navbar">
+
+
+    <a href="index.html" class="logo">
+        &lt;Elke/&gt;
+    </a>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</div>
+
+
+</header>
+
+<main>
+
+
+<!-- Hero -->
+
+<section class="page-hero">
+
+    <p class="eyebrow">EXPERIMENTS & SIDE PROJECTS</p>
+
+    <h1>
+        Things I built<br>
+        <span>because I wanted to know how they worked.</span>
+    </h1>
+
+    <p>
+        Small experiments and projects I've worked on out of curiosity,
+        mostly exploring how programs and games behave under the hood.
+    </p>
+
+</section>
+
+
+<!-- Intro -->
+
+<section class="mini-project-intro">
+
+    <div class="terminal">
+
+        <div class="terminal-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="terminal-content">
+
+            <p>
+                <span class="purple">$</span> ls experiments/
+            </p>
+
+            <p class="terminal-output">
+                plants-vs-zombies/
+            </p>
+
+            <p class="terminal-output">
+                good-pizza-great-pizza/
+            </p>
+
+            <p class="terminal-output">
+                supermarket-simulator/
+            </p>
+
+            <p class="terminal-output">
+                dying-light-trainer/
+            </p>
+
+            <p>
+                <span class="purple">$</span> status
+            </p>
+
+            <p class="status">
+                ● curiosity.exe is running
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Plants vs Zombies -->
+
+<section class="mini-project">
+
+    <div class="mini-project-heading">
+
+        <p class="eyebrow">01 · GAME MODIFICATION</p>
+
+        <h2>🌻 Plants vs. Zombies</h2>
+
+        <p>
+            Experimenting with plant cooldowns and resource requirements.
+        </p>
+
+    </div>
+
+
+    <div class="before-after">
+
+        <div class="video-block">
+
+            <div class="video-label">
+                BEFORE
+            </div>
+
+            <video controls playsinline>
+                <source
+                    src="images/mini-projects/pvz_before.mp4"
+                    type="video/mp4">
+            </video>
+
+        </div>
+
+
+        <div class="video-block">
+
+            <div class="video-label after">
+                AFTER
+            </div>
+
+            <video controls playsinline>
+                <source
+                    src="images/mini-projects/pvz_after.mp4"
+                    type="video/mp4">
+            </video>
+
+        </div>
+
+    </div>
+
+
+    <div class="mini-project-info">
+
+        <div>
+
+            <h3>What I did</h3>
+
+            <p>
+                I experimented with bypassing the normal plant cooldown
+                and resource requirements to see how the game's behaviour
+                changed.
+            </p>
+
+            <p>
+                As you can see in the before video, each plant has its own
+                cost and cooldown, meaning I couldn't immediately place
+                the same plant again after using it.
+            </p>
+
+            <p>
+                In the after video, all of the plant costs have been
+                reduced to 0, so the player is no longer charged for
+                placing plants. The cooldowns have also been removed,
+                allowing plants to be placed continuously.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>What I learned</h3>
+
+            <p>
+                This experiment gave me more experience investigating
+                unfamiliar game behaviour and figuring out which values
+                were responsible for specific mechanics.
+            </p>
+
+            <p>
+                I also learned that changing one value does not always
+                explain everything that is happening. I had to compare
+                different values and repeatedly test my changes to
+                understand what was actually controlling the cooldown
+                and plant cost.
+            </p>
+
+            <p>
+                It was a good exercise in being patient and curious when
+                I don't immediately know how something works.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="mini-project-tools">
+
+        <span>Cheat Engine</span>
+        <span>Lua</span>
+        <span>Memory analysis</span>
+
+    </div>
+
+</section>
+
+
+<!-- Good Pizza -->
+
+<section class="mini-project mini-project-dark">
+
+    <div class="mini-project-heading">
+
+        <p class="eyebrow">02 · GAME MODIFICATION</p>
+
+        <h2>🍕 Good Pizza, Great Pizza</h2>
+
+        <p>
+            Tracing the game's money handling and experimenting with
+            its purchasing behaviour.
+        </p>
+
+    </div>
+
+
+    <div class="before-after">
+
+        <div class="video-block">
+
+            <div class="video-label">
+                BEFORE
+            </div>
+
+            <video controls playsinline>
+                <source
+                    src="images/mini-projects/gpgp_before.mp4"
+                    type="video/mp4">
+            </video>
+
+        </div>
+
+
+        <div class="video-block">
+
+            <div class="video-label after">
+                AFTER
+            </div>
+
+            <video controls playsinline>
+                <source
+                    src="images/mini-projects/gpgp_after.mp4"
+                    type="video/mp4">
+            </video>
+
+        </div>
+
+    </div>
+
+
+    <div class="mini-project-info">
+
+        <div>
+
+            <h3>What I did</h3>
+
+            <p>
+                I spent a lot of time tracing the function responsible
+                for subtracting money when making a purchase. After
+                finding it, I experimented with changing its behaviour.
+            </p>
+
+            <p>
+                In the before video, you can see that trying to buy
+                something that costs more than my available money
+                triggers a "Not enough funds" popup. Both my money and
+                gems also decrease when making a purchase.
+            </p>
+
+            <p>
+                In the after video, I can make purchases even when I
+                don't have enough initial funds. On top of that, both
+                my money and gems increase instead of decreasing.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>What I learned</h3>
+
+            <p>
+                This experiment taught me a lot about persistence when
+                investigating unfamiliar code. Finding the relevant
+                function took considerably more time than I initially
+                expected.
+            </p>
+
+            <p>
+                I also became more comfortable following values through
+                the program and testing different possibilities instead
+                of immediately knowing which address or function I
+                needed.
+            </p>
+
+            <p>
+                Most importantly, it showed me how much you can learn
+                simply by being willing to investigate something you
+                don't understand yet.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="mini-project-tools">
+
+        <span>Cheat Engine</span>
+        <span>Memory analysis</span>
+        <span>Reverse engineering</span>
+
+    </div>
+
+</section>
+
+
+<!-- Supermarket Simulator -->
+
+<section class="mini-project">
+
+    <div class="mini-project-heading">
+
+        <p class="eyebrow">03 · GAME MODIFICATION</p>
+
+        <h2>🛒 Supermarket Simulator 3D</h2>
+
+        <p>
+            Experimenting with how the game handles money and energy.
+        </p>
+
+    </div>
+
+
+    <div class="before-after">
+
+        <div class="video-block">
+
+            <div class="video-label">
+                BEFORE
+            </div>
+
+            <video controls playsinline>
+                <source
+                    src="images/mini-projects/Supermarket_before.mp4"
+                    type="video/mp4">
+            </video>
+
+        </div>
+
+
+        <div class="video-block">
+
+            <div class="video-label after">
+                AFTER
+            </div>
+
+            <video controls playsinline>
+                <source
+                    src="images/mini-projects/Supermarket_after.mp4"
+                    type="video/mp4">
+            </video>
+
+        </div>
+
+    </div>
+
+
+    <div class="mini-project-info">
+
+        <div>
+
+            <h3>What I did</h3>
+
+            <p>
+                I experimented with the game's resource handling and
+                modified the behaviour of its money and energy values.
+            </p>
+
+            <p>
+                In the before video, you can see that the game starts
+                with only $40. If there isn't enough money for a
+                purchase, the game displays a "Not enough funds"
+                notification and the basket doesn't empty. Spending
+                energy to make packages arrive faster also decreases
+                the available energy.
+            </p>
+
+            <p>
+                In the after video, the initial amount of money no
+                longer matters. Instead, my money increases when I
+                spend it, and my energy also increases whenever I use it.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>What I learned</h3>
+
+            <p>
+                This experiment gave me more practice identifying values
+                that change during normal gameplay and figuring out what
+                happens when their behaviour is modified.
+            </p>
+
+            <p>
+                It was especially interesting to see that changing the
+                direction of a value update could affect the game in a
+                completely different way. Instead of resources being
+                consumed, they could effectively be generated by the
+                same action.
+            </p>
+
+            <p>
+                It also gave me more experience testing changes in small
+                steps and observing the result before moving on to
+                something else.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="mini-project-tools">
+
+        <span>Memory analysis</span>
+        <span>Game modification</span>
+
+    </div>
+
+</section>
+
+
+<!-- Dying Light -->
+
+<section class="mini-project mini-project-dark">
+
+    <div class="mini-project-heading">
+
+        <p class="eyebrow">04 · TRAINER</p>
+
+        <h2>🧟 Dying Light Trainer</h2>
+
+        <p>
+            A small trainer created while experimenting with game
+            memory and runtime modification.
+        </p>
+
+    </div>
+
+
+    <div class="trainer-videos">
+
+        <div class="video-block">
+
+            <div class="video-label">
+                SHOWCASE 01
+            </div>
+
+            <video controls playsinline>
+                <source
+                    src="images/mini-projects/dl1.mp4"
+                    type="video/mp4">
+            </video>
+
+        </div>
+
+
+        <div class="video-block">
+
+            <div class="video-label after">
+                SHOWCASE 02
+            </div>
+
+            <video controls playsinline>
+                <source
+                    src="images/mini-projects/dl2.mp4"
+                    type="video/mp4">
+            </video>
+
+        </div>
+
+
+        <div class="video-block">
+
+            <div class="video-label">
+                SHOWCASE 03
+            </div>
+
+            <video controls playsinline>
+                <source
+                    src="images/mini-projects/dl3.mp4"
+                    type="video/mp4">
+            </video>
+
+        </div>
+
+
+        <div class="video-block">
+
+            <div class="video-label after">
+                SHOWCASE 04
+            </div>
+
+            <video controls playsinline>
+                <source
+                    src="images/mini-projects/dl4.mp4"
+                    type="video/mp4">
+            </video>
+
+        </div>
+
+    </div>
+
+
+    <div class="mini-project-info">
+
+        <div>
+
+            <h3>What I made</h3>
+
+            <p>
+                I created a small trainer to experiment with modifying
+                values in the game while it was running.
+            </p>
+
+            <p>
+                In the first showcase, you can see the effects of
+                several trainer options. Normally, the grappling hook
+                has a cooldown, dropped weapons disappear from my
+                inventory, and my health decreases when I take damage.
+                After enabling the corresponding options, the grappling
+                hook no longer runs out, dropped weapons can be
+                duplicated, and my health no longer decreases.
+            </p>
+
+            <p>
+                The second showcase demonstrates changing one weapon
+                into another by selecting the weapon to change and then
+                choosing the weapon it should become. This isn't
+                something that can normally be done through the game's
+                mechanics.
+            </p>
+
+            <p>
+                The third and fourth showcases focus on modifying
+                individual weapon properties. I can change the weapon's
+                rarity, durability, displayed quantity, and repair count.
+                I can also add or remove upgrades and modifications from
+                their respective slots, which normally cannot be changed
+                after being added.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>What I learned</h3>
+
+            <p>
+                This project gave me a lot more experience working with
+                game memory and understanding how different values are
+                represented and changed while a game is running.
+            </p>
+
+            <p>
+                I also learned how different pieces of a game can be
+                connected. Changing something as simple as a weapon's
+                quantity or durability meant figuring out which value
+                controlled it and testing whether changing that value
+                actually produced the behaviour I expected.
+            </p>
+
+            <p>
+                Building the trainer also taught me how much trial and
+                error is involved in reverse engineering. A lot of the
+                work was finding something interesting, testing it,
+                breaking it, and then trying to understand why it
+                behaved that way.
+            </p>
+
+            <p>
+                The trainer is still unfinished, but it was one of my
+                more involved experiments and gave me a much better
+                understanding of memory manipulation than I had before
+                starting it.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="mini-project-tools">
+
+        <span>C#</span>
+        <span>Memory manipulation</span>
+        <span>Reverse engineering</span>
+        <span>WIP</span>
+
+    </div>
+
+
+    <a href="https://github.com/Elke-K/Dying-Light-Trainer" class="text-link">
+        View source on GitHub →
+    </a>
+
+</section>
+
+
+<!-- Note -->
+
+<section class="mini-project-note">
+
+    <div class="experiment-note">
+
+        <span>⚠️</span>
+
+        <div>
+
+            <strong>A note about these projects</strong>
+
+            <p>
+                These are unfinished and very experimental.
+                Things do work, but every developer starts somewhere. :)
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+<footer class="site-footer">
+
+    <p>
+        © 2026 Elke
+    </p>
+
+    <div>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/Elke-K" target="_blank" rel="noopener">
+            GitHub ↗
+        </a>
+    </div>
+
+</footer>
+
+
+</body>
+</html>

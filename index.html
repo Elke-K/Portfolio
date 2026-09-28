@@ -3,9 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+
+    <title>Elke | IT Student & Developer</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <span>&lt;</span>Elke<span>/&gt;</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About Me</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">IT STUDENT · DEVELOPER · CURIOUS HUMAN</p>
+
+                <h1>
+                    Hi, I'm <span>Elke</span>.
+                </h1>
+
+                <p class="hero-text">
+                    I'm an IT student at AP Hogeschool who enjoys building things,
+                    experimenting with technology, and figuring out how things work
+                    underneath the surface.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="projects.html" class="button primary">
+                        View my projects
+                    </a>
+
+                    <a href="about.html" class="button secondary">
+                        About me
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-decoration">
+                <div class="terminal">
+                    <div class="terminal-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="terminal-content">
+                        <p><span class="purple">$</span> whoami</p>
+                        <p class="terminal-output">IT student & developer</p>
+
+                        <p><span class="purple">$</span> currently_learning</p>
+                        <p class="terminal-output">C++ · x64 Assembly</p>
+
+                        <p><span class="purple">$</span> status</p>
+                        <p class="terminal-output status">● always experimenting</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Technologies -->
+        <section class="section">
+
+            <div class="section-heading">
+                <p class="eyebrow">MY TOOLBOX</p>
+                <h2>Technologies I work with</h2>
+            </div>
+
+            <div class="tech-grid">
+
+                <div class="tech-card">
+                    <span class="tech-icon">C#</span>
+                    <span>C#</span>
+                </div>
+
+                <div class="tech-card">
+                    <span class="tech-icon">Py</span>
+                    <span>Python</span>
+                </div>
+
+                <div class="tech-card">
+                    <span class="tech-icon">JS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="tech-card">
+                    <span class="tech-icon">TS</span>
+                    <span>TypeScript</span>
+                </div>
+
+                <div class="tech-card">
+                    <span class="tech-icon">&lt;/&gt;</span>
+                    <span>HTML & CSS</span>
+                </div>
+
+                <div class="tech-card">
+                    <span class="tech-icon">SQL</span>
+                    <span>SQL</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Featured projects -->
+        <section class="section">
+
+            <div class="section-heading section-heading-row">
+
+                <div>
+                    <p class="eyebrow">FEATURED</p>
+                    <h2>Things I've built</h2>
+                </div>
+
+                <a href="projects.html" class="text-link">
+                    View all projects →
+                </a>
+
+            </div>
+
+
+            <div class="project-grid">
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="./images/projects/Coffee_shop/cafe1.png"
+                            alt="Coffee Shop Simulator">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-meta">
+                            <span>⭐ Featured</span>
+                            <span>Godot</span>
+                        </div>
+
+                        <h3>Coffee Shop Simulator</h3>
+
+                        <p>
+                            A cozy 3D game prototype where players make coffee,
+                            manage orders, and keep their customers happy.
+                        </p>
+
+                        <a href="projects.html" class="text-link">
+                            Read more →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="./images/projects/Modification_showcase.png"
+                            alt="Game modification showcase image">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-meta">
+                            <span>🧪 Experiment</span>
+                            <span>Reverse Engineering</span>
+                        </div>
+
+                        <h3>Game Modification Experiments</h3>
+
+                        <p>
+                            Exploring memory, assembly and program behaviour
+                            through experiments with games and compiled software.
+                        </p>
+
+                        <a href="projects.html" class="text-link">
+                            Read more →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Currently -->
+        <section class="section currently">
+
+            <div class="currently-content">
+
+                <p class="eyebrow">CURRENTLY</p>
+
+                <h2>Always learning something new.</h2>
+
+                <p>
+                    Through school and my own projects, I'm constantly exploring
+                    new technologies and concepts. Right now, I'm learning more
+                    about C++, low-level programming and reverse engineering. And at school I'm learning
+                    about React, React Native, ASP.NET API's and Security & Testing
+                </p>
+
+            </div>
+
+            <div class="currently-tags">
+                <span>C++</span>
+                <span>x64 Assembly</span>
+                <span>React & React Native</span>
+                <span>ASP.NET</span>
+                <span>Security & Testing</span>
+            </div>
+
+        </section>
+
+    </main>
+
+
+<footer class="site-footer">
+
+    <p>
+        © 2026 Elke
+    </p>
+
+    <div>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/Elke-K" target="_blank" rel="noopener">
+            GitHub ↗
+        </a>
+    </div>
+
+</footer>
     
 </body>
 </html>
